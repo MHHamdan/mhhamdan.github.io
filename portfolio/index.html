@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f9f9f6">
+  <title>Mohammed Hamdan | Machine Learning Researcher</title>
+  <meta name="description" content="Mohammed Hamdan’s research portfolio: handwriting recognition, document understanding, grounded question answering and multi-agent systems. It shows what he built himself, what he contributed to team projects, and where to see the code and papers.">
+  <link rel="canonical" href="https://mhhamdan.github.io/portfolio/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Mohammed Hamdan | Machine Learning Researcher">
+  <meta property="og:description" content="Research, open-source projects, team work and publications in document intelligence and agentic AI.">
+  <meta property="og:url" content="https://mhhamdan.github.io/portfolio/">
+  <meta property="og:image" content="https://mhhamdan.github.io/portfolio/assets/portfolio-preview.jpg">
+  <meta property="og:image:alt" content="Mohammed Hamdan’s research portfolio with a handwritten manuscript detail.">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/instrument-sans.woff" as="font" type="font/woff" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <script src="portfolio.js" defer></script>
+</head>
+<body>
+  <svg class="symbols" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="i-mark" viewBox="0 0 32 32"><path d="M3 10V3h7m12 0h7v7m0 12v7h-7m-12 0H3v-7" fill="none" stroke="currentColor" stroke-width="2.5"/><path d="m8 23 5-14h3l.6 8.2 5-8.2H25l-5 14h-3.4l2.3-6.4-3.4 5.4H13l-.5-5.6-2.3 6.6Z" fill="currentColor"/></symbol>
+    <symbol id="i-github" viewBox="0 0 24 24"><path fill="currentColor" d="M12 .9a11.1 11.1 0 0 0-3.51 21.63c.56.1.76-.24.76-.54v-2.14c-3.1.68-3.75-1.32-3.75-1.32-.51-1.29-1.24-1.63-1.24-1.63-1.02-.7.08-.68.08-.68 1.13.08 1.72 1.16 1.72 1.16 1 1.71 2.62 1.22 3.26.94.1-.73.4-1.22.71-1.5-2.48-.28-5.08-1.24-5.08-5.5 0-1.22.44-2.22 1.15-3-.12-.28-.5-1.42.11-2.96 0 0 .94-.3 3.05 1.14a10.62 10.62 0 0 1 5.56 0c2.12-1.44 3.05-1.14 3.05-1.14.61 1.54.23 2.68.11 2.96.72.78 1.15 1.78 1.15 3 0 4.27-2.61 5.22-5.1 5.5.4.35.76 1.03.76 2.08v3.09c0 .3.2.65.77.54A11.1 11.1 0 0 0 12 .9Z"/></symbol>
+    <symbol id="i-scholar" viewBox="0 0 24 24"><path d="m2 9 10-5 10 5-10 5-10-5Zm4 3v4c3.6 3 8.4 3 12 0v-4m3-2v6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" stroke-linecap="round"/></symbol>
+    <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="7" height="7" rx="1.1" fill="none" stroke="currentColor" stroke-width="1.8"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.1" fill="none" stroke="currentColor" stroke-width="1.8"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.1" fill="none" stroke="currentColor" stroke-width="1.8"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.1" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+    <symbol id="i-scan" viewBox="0 0 24 24"><path d="M8 3H4v4m12-4h4v4M4 17v4h4m12-4v4h-4M7 9h10M7 12h8M7 15h9" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/></symbol>
+    <symbol id="i-location" viewBox="0 0 24 24"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="10" r="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+    <symbol id="i-file" viewBox="0 0 24 24"><path d="M6 3h8l4 4v14H6V3Zm8 0v5h4M9 12h6m-6 4h6" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linejoin="round" stroke-linecap="round"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="m8 5 11 7-11 7V5Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+    <symbol id="i-link" viewBox="0 0 24 24"><path d="m9 15 6-6m-4.5-2.5 2-2a4.2 4.2 0 0 1 6 6l-2 2M13.5 17.5l-2 2a4.2 4.2 0 0 1-6-6l2-2" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M4 3h16a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="7.5" cy="7.3" r="1.12" fill="currentColor"/><path d="M7.5 10v7.5m4-7.5v7.5m0-4.4c0-4.1 5-4.1 5 0v4.4" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M5 12h14m-7-7v14" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+  </svg>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="shell nav-layout">
+      <a class="brand" href="#overview" aria-label="Mohammed Hamdan, overview"><svg class="brand-mark" aria-hidden="true"><use href="#i-mark"/></svg><span>Mohammed Hamdan</span></a>
+      <button class="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false"><svg class="icon" aria-hidden="true"><use href="#i-menu"/></svg>Menu</button>
+      <nav id="site-nav" class="nav" aria-label="Main navigation">
+        <a href="#overview" aria-current="location">Overview</a><a href="#projects">Projects</a><a href="#publications">Publications</a><a href="#about">About</a>
+        <a class="nav-github" href="https://github.com/MHHamdan"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg>GitHub</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section id="overview" class="hero shell" aria-labelledby="intro-title">
+      <div class="hero-copy">
+        <p class="kicker"><span class="kicker-rule" aria-hidden="true"></span>Machine learning researcher</p>
+        <h1 id="intro-title">Mohammed<br>Hamdan<span class="period">.</span></h1>
+        <p class="lead">I build models that read handwriting and page layouts, and systems that show the evidence behind each answer and flag uncertain results for human review.</p>
+        <p class="location"><svg class="icon" aria-hidden="true"><use href="#i-location"/></svg>Montréal, Canada</p>
+        <div class="actions">
+          <a class="button primary" href="#projects"><svg class="icon" aria-hidden="true"><use href="#i-grid"/></svg>Explore projects</a>
+          <a class="button secondary" href="https://scholar.google.com/citations?hl=en&amp;user=gx_Dn_kAAAAJ&amp;view_op=list_works&amp;sortby=pubdate"><svg class="icon" aria-hidden="true"><use href="#i-scholar"/></svg>Google Scholar</a>
+        </div>
+      </div>
+      <figure class="viewer" aria-labelledby="viewer-caption">
+        <div class="viewer-top"><span class="viewer-title"><svg class="icon" aria-hidden="true"><use href="#i-scan"/></svg>Document viewer</span>
+          <div class="view-switch requires-js" role="group" aria-label="Manuscript view">
+            <button type="button" data-view="scan" aria-pressed="false" aria-controls="scan-stage">Scan</button><button type="button" data-view="layout" aria-pressed="true" aria-controls="scan-stage">Layout</button>
+          </div>
+        </div>
+        <div class="scan-stage" id="scan-stage" data-mode="layout">
+          <span class="reg lt" aria-hidden="true"></span><span class="reg rt" aria-hidden="true"></span><span class="reg lb" aria-hidden="true"></span><span class="reg rb" aria-hidden="true"></span>
+          <div class="sheet-tilt">
+            <img src="assets/manuscript.webp" width="1120" height="627" alt="Detail of a handwritten 1787 letter with flowing lines of cursive in dark ink." fetchpriority="high">
+            <div class="annotation line-frame" aria-hidden="true"><span>Text line</span></div>
+            <div class="annotation block-frame" aria-hidden="true"><span>Text region</span></div>
+          </div>
+        </div>
+        <figcaption id="viewer-caption"><span><b class="legend-key" aria-hidden="true"></b><span id="view-caption">Illustrative overlay</span></span><a href="https://mohistory.mobiusconsortium.org/repositories/2/digital_objects/879">Letter, 1787 <svg class="icon" aria-hidden="true"><use href="#i-link"/></svg></a></figcaption>
+      </figure>
+    </section>
+    <section class="projects band" id="projects" aria-labelledby="projects-title">
+      <div class="shell">
+        <div class="section-heading"><h2 id="projects-title">Selected projects<span class="period">.</span></h2><a class="section-link" href="https://github.com/MHHamdan?tab=repositories"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg>All repositories</a></div>
+        <p class="section-intro">Each project says whether it was my own work or a team’s, what I personally did, and where you can check it.</p>
+        <div class="projects-grid">
+          <article class="project-card" id="calidoc">
+            <div class="project-art receipt-art" aria-hidden="true"><div class="receipt-sheet"><img src="assets/cord-receipt.webp" alt="" width="580" height="502" loading="lazy"><span class="coupon-box"><i>REVIEW</i></span></div></div>
+            <div class="project-copy"><p class="art-label"><i></i>Field-level calibration</p><h3><a href="https://github.com/MHHamdan/CaliDoc">CaliDoc</a></h3>
+              <p class="role-tag">My research · with Prof. Mohamed Cheriet</p>
+              <dl class="facts">
+                <div><dt>Problem</dt><dd>A model can be confident about each word but still return a wrong total or date. Downstream systems use whole fields, so that is what needs a reliability check.</dd></div>
+                <div><dt>My part</dt><dd>I designed the method, ran the experiments, and wrote the code, the paper and the demo.</dd></div>
+                <div><dt>Built</dt><dd>A calibration layer that sends each extracted field to pass, review or abstain, plus an audit that flags likely annotation errors. It is evaluated on four receipt and form datasets.</dd></div>
+              </dl>
+              <div class="card-links"><a href="https://github.com/MHHamdan/CaliDoc"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg>Code</a><a href="https://colab.research.google.com/github/MHHamdan/CaliDoc/blob/main/notebooks/CaliDoc_WACV2027_Demo.ipynb"><svg class="icon" aria-hidden="true"><use href="#i-play"/></svg>Try notebook</a><a href="https://huggingface.co/collections/MHamdan/calidoc-wacv-2027-6ad41a62c6a81846dfeb44b4"><svg class="icon" aria-hidden="true"><use href="#i-link"/></svg>Models</a></div>
+            </div>
+          </article>
+          <article class="project-card" id="investmentiq">
+            <div class="project-art graph-art" aria-hidden="true"><div class="graph">
+              <div class="graph-col"><span>Financial</span><span>Qualitative</span><span>Context</span><span>Workforce</span><span>Market</span></div>
+              <div class="graph-col mid"><span class="hub">Signal fusion</span><span class="fork">Conflict? → debate</span></div>
+              <div class="graph-col end"><span class="out">HOLD</span></div>
+            </div></div>
+            <div class="project-copy"><p class="art-label"><i></i>Multi-agent orchestration</p><h3><a href="https://github.com/MHHamdan/InvestmentIQ">InvestmentIQ</a></h3>
+              <p class="role-tag team">Team capstone, Agentic AI course · 3 people · 2025</p>
+              <dl class="facts">
+                <div><dt>Problem</dt><dd>Investment signals come from financial statements, analyst ratings and news, and they often disagree. We wanted one system that weighs them and explains its recommendation.</dd></div>
+                <div><dt>My part</dt><dd>I was lead architect. I designed the multi-agent structure, built the LangGraph workflow and orchestration, and connected it to the Streamlit dashboard. I also merged my teammates’ agents into the main branch.</dd></div>
+                <div><dt>Built</dt><dd>Five specialist agents feed a signal-fusion step. When their signals conflict, a debate step runs before the recommendation. In the released code, the financial and market agents use live market data, and the other three use sample data by default.</dd></div>
+              </dl>
+              <p class="credit">Team credit: Murthy Vanapalli built the market-data integration, price targets and recommendation thresholds. Ameya built the qualitative-analysis agent.</p>
+              <div class="card-links"><a href="https://github.com/MHHamdan/InvestmentIQ"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg>Code</a><a href="https://github.com/MHHamdan/InvestmentIQ/blob/main/core/investment_graph.py"><svg class="icon" aria-hidden="true"><use href="#i-file"/></svg>Workflow graph</a></div>
+            </div>
+          </article>
+          <article class="project-card" id="auralynq">
+            <div class="project-art ground-art" aria-hidden="true">
+              <div class="pdf-page"><span class="bar"></span><span class="bar short"></span><span class="bar"></span><span class="bar hl"><b>1</b></span><span class="bar"></span><span class="bar short"></span><span class="bar"></span></div>
+              <div class="answer-chip">…prunes weak paths <b>[1]</b></div>
+            </div>
+            <div class="project-copy"><p class="art-label"><i></i>Grounded answers over PDFs</p><h3><a href="https://github.com/MHHamdan/Auralynq-RAG">Auralynq-RAG</a></h3>
+              <p class="role-tag">Independent open source · 2026</p>
+              <dl class="facts">
+                <div><dt>Problem</dt><dd>Most document chat tools give you an answer and a file name. You still have to find the supporting passage yourself.</dd></div>
+                <div><dt>My part</dt><dd>I built it on my own: retrieval, the agentic answer loop, the grounding layer, the voice input and the web interface.</dd></div>
+                <div><dt>Built</dt><dd>A local-first system you can also query by voice. Each citation in an answer opens the PDF page with the supporting region outlined. If a passage has no stored coordinates, the system shows the whole page and labels the citation as page-level.</dd></div>
+              </dl>
+              <p class="link-note">The Hugging Face demo is currently paused. The repository runs locally without a GPU or API keys.</p>
+              <div class="card-links"><a href="https://github.com/MHHamdan/Auralynq-RAG"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg>Code</a><a href="https://github.com/MHHamdan/Auralynq-RAG/blob/main/auralynq/grounding/resolver.py"><svg class="icon" aria-hidden="true"><use href="#i-file"/></svg>Grounding code</a></div>
+            </div>
+          </article>
+        </div>
+
+        <h3 class="group-title" id="handwriting">Handwritten documents</h3>
+        <div class="projects-grid two">
+          <article class="project-card">
+            <div class="project-art layout-art" aria-hidden="true"><div class="back-page"></div><div class="layout-sheet"><img src="assets/letter-page.webp" alt="" width="440" height="541" loading="lazy"><span class="layout-head"></span><span class="layout-body"></span><span class="layout-sign"></span></div><div class="layout-tokens"><span>&lt;page&gt;</span><span>&lt;body&gt;</span><span>&lt;/body&gt;</span></div></div>
+            <div class="project-copy"><p class="art-label"><i></i>Document layout</p><h3><a href="https://github.com/MHHamdan/Faster-HAND">FasterHAND</a></h3>
+              <p class="role-tag">My research · with A. Rahiche and M. Cheriet</p>
+              <dl class="facts">
+                <div><dt>Problem</dt><dd>Handwritten pages mix body text, marginal notes and several columns. Most pipelines segment the page first, and segmentation errors carry into the transcription.</dd></div>
+                <div><dt>My part</dt><dd>I wrote the model, training and evaluation code, trained the released weights, and built the demo.</dd></div>
+                <div><dt>Built</dt><dd>A model that reads a page as one sequence of characters and layout tokens in reading order. It is compared with the public DAN weights on READ 2016 under the same protocol, on one, two and three pages at a time.</dd></div>
+              </dl>
+              <div class="card-links"><a href="https://github.com/MHHamdan/Faster-HAND"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg>Code</a><a href="https://colab.research.google.com/github/MHHamdan/Faster-HAND/blob/main/demo/FasterHAND_demo.ipynb"><svg class="icon" aria-hidden="true"><use href="#i-play"/></svg>Try notebook</a><a href="https://arxiv.org/abs/2412.18981"><svg class="icon" aria-hidden="true"><use href="#i-file"/></svg>HAND preprint</a></div>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-art htr-art" aria-hidden="true"><div class="line-stack"><div class="hand-line"><img src="assets/line-sample.webp" alt="" width="720" height="125" loading="lazy"></div><div class="transcription"><span class="prompt-glyph">›</span> With my sincere prayers<span class="cursor"></span></div></div></div>
+            <div class="project-copy"><p class="art-label"><i></i>Handwriting recognition</p><h3><a href="https://github.com/MHHamdan/htrjand">HTR-JAND</a></h3>
+              <p class="role-tag">My research · with A. Rahiche and M. Cheriet</p>
+              <dl class="facts">
+                <div><dt>Problem</dt><dd>Accurate line recognizers are often too large to run cheaply on big archives.</dd></div>
+                <div><dt>My part</dt><dd>I designed the architecture and the distillation setup, ran the experiments, and released the code and models.</dd></div>
+                <div><dt>Built</dt><dd>A compact line recognizer that a larger teacher model trains. It is evaluated on IAM, RIMES, Bentham, Washington and Saint Gall.</dd></div>
+              </dl>
+              <div class="card-links"><a href="https://github.com/MHHamdan/htrjand"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg>Code</a><a href="https://colab.research.google.com/github/MHHamdan/htrjand/blob/main/notebooks/HTR_JAND_Demo.ipynb"><svg class="icon" aria-hidden="true"><use href="#i-play"/></svg>Try notebook</a><a href="https://arxiv.org/abs/2412.18524"><svg class="icon" aria-hidden="true"><use href="#i-file"/></svg>Preprint</a></div>
+            </div>
+          </article>
+        </div>
+
+        <details class="more-projects" id="more-projects"><summary>More projects, team work and competitions <svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></summary>
+          <div class="mini-projects">
+            <article><p class="mini-tag">Research · journal paper</p><h3><a href="https://github.com/MHHamdan/SAGE">SAGE</a></h3><p>A framework for evaluating LLM agents the way they behave in deployment: stability over long runs, operating cost, exposure at tool and protocol boundaries, and the effect of corrective action. I wrote the reference implementation that accompanies the IEEE TAI paper.</p></article>
+            <article><p class="mini-tag">Research · preprint</p><h3><a href="https://github.com/MHHamdan/MARL_for_IoT">MARL-IoTP</a></h3><p>Multi-agent reinforcement learning in which IoT devices choose perception models and edge servers allocate compute, with a learned message channel between them. I am the first author and wrote the simulation and training code.</p></article>
+            <article><p class="mini-tag">Research · under review</p><h3><a href="https://github.com/MHHamdan/TopK-TarMAC">SCALE</a></h3><p>Measures when sparse attention between agents actually reduces latency on GPUs, and counts the cost of choosing which peers to keep. The repository holds the code, kernels and measurement records for a manuscript under review.</p></article>
+            <article><p class="mini-tag">Research · conference paper</p><h3><a href="https://github.com/MHHamdan/Architecture-Agnostic-Document-Understanding">Curriculum learning for documents</a></h3><p>Tests whether a progressive data schedule shortens training for BERT and LayoutLMv3 across six document datasets. Matched-compute baselines and ablations show where the saving comes from. Published at ICAART 2026.</p></article>
+            <article><p class="mini-tag">Teaching · independent</p><h3><a href="https://mhhamdan.github.io/rose-explorer/">ROSE Explorer</a></h3><p>Eleven notebooks that explain and check in code every equation of a survey of generative models, plus an interactive app with seven demos covering sampling, decoding and evaluation.</p></article>
+            <article><p class="mini-tag">Independent</p><h3><a href="https://github.com/MHHamdan/VectorSphere">VectorSphere</a></h3><p>A semantic search system that combines vector search, keyword retrieval and reranking.</p></article>
+            <article><p class="mini-tag team">Team challenge entry · 5 people · 2026</p><h3><a href="https://github.com/MHHamdan/Sussex-Huawei-Locomotion-Challenge-2026">SHL Challenge 2026: FeatureFlyers</a></h3><p>Recognizes eight transport and locomotion modes from phone sensor data, with frozen foundation models as the challenge requires. I maintained the team repository and built the staged pipeline that ends in the team’s final LightGBM ensemble. The team’s primary contact was Ahmed Bali.</p></article>
+            <article><p class="mini-tag team">Team project · 2022</p><h3><a href="https://github.com/jay-jojo-cheng/deep-tsundoku">Deep Tsundoku</a></h3><p>Finds and recommends books from a photo of a bookshelf. I contributed the first baseline recommenders, built on TF-IDF and Word2Vec, and a Donut fine-tuning run. Teammates built the deployed spine reader, the book-cover model and the final recommender.</p></article>
+            <article><p class="mini-tag">Competitions</p><h3>Kaggle notebooks</h3><p><a class="inline" href="https://github.com/MHHamdan/Kaggle-Competition-Feedback-Prize---English-Language-Learning">Feedback Prize – English Language Learning</a> (2022): a DeBERTa scoring pipeline adapted from a credited public notebook. <a class="inline" href="https://github.com/MHHamdan/Kaggle">GPT-OSS-20B red-teaming</a> (2025): my findings and the tools I used to reproduce them.</p></article>
+          </div>
+        </details>
+      </div>
+    </section>
+    <section class="publications shell" id="publications" aria-labelledby="pub-title">
+      <div class="section-heading"><h2 id="pub-title">Publications<span class="period">.</span></h2><a class="section-link" href="https://scholar.google.com/citations?hl=en&amp;user=gx_Dn_kAAAAJ&amp;view_op=list_works&amp;sortby=pubdate"><svg class="icon" aria-hidden="true"><use href="#i-scholar"/></svg>Google Scholar</a></div>
+      <div class="filters requires-js" role="group" aria-label="Filter publications"><button data-filter="all" type="button" aria-pressed="true">All</button><button data-filter="journal" type="button" aria-pressed="false">Journal</button><button data-filter="conference" type="button" aria-pressed="false">Conference</button><button data-filter="workshop" type="button" aria-pressed="false">Workshop</button><button data-filter="preprint" type="button" aria-pressed="false">Preprint</button></div>
+      <p class="sr-only" id="filter-status" aria-live="polite"></p>
+      <ol class="papers">
+        <li data-kind="conference"><span class="year">2027</span><div><p class="venue">WACV 2027 · Evaluations and Datasets Track · Accepted</p><h3><a href="https://github.com/MHHamdan/CaliDoc#citation">CaliDoc: Calibrated Field-Level Risk and Annotation Auditing for Document Information Extraction</a></h3><p class="authors"><strong>Mohammed Hamdan</strong>, Mohamed Cheriet</p></div><a class="paper-link" href="https://github.com/MHHamdan/CaliDoc#citation" aria-label="View CaliDoc citation and project"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg>Project</a></li>
+        <li data-kind="journal"><span class="year">2026</span><div><p class="venue">IEEE Transactions on Artificial Intelligence · Journal article</p><h3><a href="https://doi.org/10.1109/TAI.2026.3731348">SAGE: A Stabilize-Assess-Govern-Enforce Framework for Deployment-Oriented Evaluation of LLM-Based Autonomous Agents</a></h3><p class="authors"><strong>Mohammed Hamdan</strong>, Vincenzo Dentamaro, Giuseppe Pirlo, Mohamed Cheriet</p></div><a class="paper-link" href="https://doi.org/10.1109/TAI.2026.3731348" aria-label="Read the SAGE paper"><svg class="icon" aria-hidden="true"><use href="#i-file"/></svg>Paper</a></li>
+        <li data-kind="conference"><span class="year">2026</span><div><p class="venue">ICAART 2026 · Conference paper</p><h3><a href="https://doi.org/10.5220/0014655300004052">Architecture-Agnostic Curriculum Learning for Document Understanding: Empirical Evidence from Text-Only and Multimodal Paradigms</a></h3><p class="authors"><strong>Mohammed Hamdan</strong>, Vincenzo Dentamaro, Giuseppe Pirlo, Mohamed Cheriet</p></div><a class="paper-link" href="https://doi.org/10.5220/0014655300004052" aria-label="Read the curriculum learning paper"><svg class="icon" aria-hidden="true"><use href="#i-file"/></svg>Paper</a></li>
+        <li data-kind="workshop"><span class="year">2026</span><div><p class="venue">WACV 2026 Workshops · VisionDocs · Workshop paper</p><h3><a href="https://doi.org/10.1109/WACVW68408.2026.00080">Adaptive Multi-Scale Feature Fusion for Paragraph-Level Handwritten Text Recognition via Spatial Attention</a></h3><p class="authors">Baha Edine Harrath, <strong>Mohammed Hamdan</strong>, Mohamed Cheriet</p></div><a class="paper-link" href="https://doi.org/10.1109/WACVW68408.2026.00080" aria-label="Read the adaptive feature fusion paper"><svg class="icon" aria-hidden="true"><use href="#i-file"/></svg>Paper</a></li>
+        <li data-kind="preprint"><span class="year">2026</span><div><p class="venue">SSRN · Preprint</p><h3><a href="https://doi.org/10.2139/ssrn.6517702">MARL-IoTP: Heterogeneous Multi-Agent Learning for Perception-Aware Edge Orchestration</a></h3><p class="authors"><strong>Mohammed Hamdan</strong>, Ahmed Bali, Fares Ghaleb, Mohamed Cheriet</p></div><a class="paper-link" href="https://doi.org/10.2139/ssrn.6517702" aria-label="Read the MARL-IoTP preprint"><svg class="icon" aria-hidden="true"><use href="#i-file"/></svg>Preprint</a></li>
+        <li data-kind="preprint"><span class="year">2024</span><div><p class="venue">arXiv · Preprint</p><h3><a href="https://arxiv.org/abs/2412.18981">HAND: Hierarchical Attention Network for Multi-Scale Handwritten Document Recognition and Layout Analysis</a></h3><p class="authors"><strong>Mohammed Hamdan</strong>, Abderrahmane Rahiche, Mohamed Cheriet</p></div><a class="paper-link" href="https://arxiv.org/abs/2412.18981" aria-label="Read the HAND preprint"><svg class="icon" aria-hidden="true"><use href="#i-file"/></svg>Preprint</a></li>
+        <li data-kind="preprint"><span class="year">2024</span><div><p class="venue">arXiv · Preprint</p><h3><a href="https://arxiv.org/abs/2412.18524">HTR-JAND: Handwritten Text Recognition with Joint Attention Network and Knowledge Distillation</a></h3><p class="authors"><strong>Mohammed Hamdan</strong>, Abderrahmane Rahiche, Mohamed Cheriet</p></div><a class="paper-link" href="https://arxiv.org/abs/2412.18524" aria-label="Read the HTR-JAND preprint"><svg class="icon" aria-hidden="true"><use href="#i-file"/></svg>Preprint</a></li>
+        <li data-kind="journal"><span class="year">2023</span><div><p class="venue">Pattern Recognition Letters 174 · Journal article</p><h3><a href="https://doi.org/10.1016/j.patrec.2023.08.008">Handwriting Word Spotting in the Space of Difference between Representations Using Vision Transformers</a></h3><p class="authors">Mohamed Mhiri, <strong>Mohammed Hamdan</strong>, Mohamed Cheriet</p></div><a class="paper-link" href="https://doi.org/10.1016/j.patrec.2023.08.008" aria-label="Read the word spotting paper"><svg class="icon" aria-hidden="true"><use href="#i-file"/></svg>Paper</a></li>
+        <li data-kind="journal"><span class="year">2023</span><div><p class="venue">Array 19 · Journal article</p><h3><a href="https://doi.org/10.1016/j.array.2023.100300">ResneSt-Transformer: Joint Attention Segmentation-Free for End-to-End Handwriting Paragraph Recognition Model</a></h3><p class="authors"><strong>Mohammed Hamdan</strong>, Mohamed Cheriet</p></div><a class="paper-link" href="https://doi.org/10.1016/j.array.2023.100300" aria-label="Read the ResneSt-Transformer paper"><svg class="icon" aria-hidden="true"><use href="#i-file"/></svg>Paper</a></li>
+        <li data-kind="journal"><span class="year">2023</span><div><p class="venue">IJDAR 26(2) · Journal article</p><h3><a href="https://doi.org/10.1007/s10032-022-00422-7">Refocus Attention Span Networks for Handwriting Line Recognition</a></h3><p class="authors"><strong>Mohammed Hamdan</strong>, Himanshu Chaudhary, Ahmed Bali, Mohamed Cheriet</p></div><a class="paper-link" href="https://doi.org/10.1007/s10032-022-00422-7" aria-label="Read the Refocus attention span paper"><svg class="icon" aria-hidden="true"><use href="#i-file"/></svg>Paper</a></li>
+        <li data-kind="journal"><span class="year">2023</span><div><p class="venue">Computer Methods and Programs in Biomedicine 230 · Journal article</p><h3><a href="https://doi.org/10.1016/j.cmpb.2023.107344">Multi-Speed Transformer Network for Neurodegenerative Disease Assessment and Activity Recognition</a></h3><p class="authors">Mohamed Cheriet, Vincenzo Dentamaro, <strong>Mohammed Hamdan</strong>, Donato Impedovo, Giuseppe Pirlo</p></div><a class="paper-link" href="https://doi.org/10.1016/j.cmpb.2023.107344" aria-label="Read the multi-speed transformer paper"><svg class="icon" aria-hidden="true"><use href="#i-file"/></svg>Paper</a></li>
+        <li data-kind="journal"><span class="year">2018</span><div><p class="venue">International Journal of Computational Linguistics Research 9(2) · Journal article</p><h3><a href="https://doi.org/10.6025/jcl/2018/9/2/60-80">An Analysis of Prepositional-Phrase Attachment Disambiguation</a></h3><p class="authors"><strong>Mohammed H. Hamdan</strong>, Imtiaz H. Khan</p></div><a class="paper-link" href="https://doi.org/10.6025/jcl/2018/9/2/60-80" aria-label="Read the prepositional-phrase attachment paper"><svg class="icon" aria-hidden="true"><use href="#i-file"/></svg>Paper</a></li>
+      </ol>
+      <p class="pub-note">Preprints that also appear on TechRxiv or Authorea are listed once, under their arXiv version. CaliDoc will link to the WACV proceedings once they are published.</p>
+    </section>
+    <section id="about" class="about band" aria-labelledby="about-title">
+      <div class="shell about-grid">
+        <div><h2 id="about-title">About me<span class="period">.</span></h2><p class="about-lead">I’m a data scientist and machine learning engineer based in Montréal. I work at SITA and did my doctoral research at École de technologie supérieure.</p><p>At the Synchromédia Laboratory, I studied how a model can read an entire handwritten page, including its margins and reading order. My work now also asks when a model’s output is reliable enough to use and when a person should review it.</p><p>Outside my own research, I build open-source tools for grounded document question answering. I have also worked on team projects and challenge entries in agentic AI and sensor-based recognition. The project list above says which parts were mine.</p></div>
+        <div class="profile-info"><div><p class="fact-label">Doctoral research</p><a href="https://www.etsmtl.ca/en/study-at-ets/professors/mcheriet">École de technologie supérieure</a><p>Handwritten document recognition · Ph.D.</p></div><div><p class="fact-label">Professional profile</p><a href="https://www.linkedin.com/in/mohammed-hamdan-b4545316a/"><svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg>Connect on LinkedIn</a></div><div><p class="fact-label">Research identifier</p><a href="https://orcid.org/0000-0002-2711-2403">ORCID <span class="orcid">0000-0002-2711-2403</span></a></div></div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer shell">
+    <div class="footer-line"><a class="brand" href="#overview"><svg class="brand-mark" aria-hidden="true"><use href="#i-mark"/></svg><span>Mohammed Hamdan</span></a><div class="footer-links"><a href="https://github.com/MHHamdan">GitHub</a><a href="https://scholar.google.com/citations?user=gx_Dn_kAAAAJ">Google Scholar</a><a href="https://www.linkedin.com/in/mohammed-hamdan-b4545316a/">LinkedIn</a></div></div>
+    <details class="credits"><summary>Image credits</summary><div><p>The cropped manuscript is a letter from Thomas Jefferson to the Count de Vergennes, dated 11 February 1787. Missouri Historical Society Library and Research Center, D04090. The layout outlines and line transcription are illustrative. <a href="https://mohistory.mobiusconsortium.org/repositories/2/digital_objects/879">Museum record</a> · <a href="https://commons.wikimedia.org/wiki/File:Letter_signed_Thomas_Jefferson,_Paris,_to_Count_de_Vergennes,_February_11,_1787.jpg">Public-domain scan</a></p><p>The CaliDoc receipt is a cropped and colour-adjusted example from CORD v2, Park et al. (2019), with the coupon field marked for review. <a href="https://github.com/MHHamdan/CaliDoc/tree/main/assets/examples/cord/cord_test_0014">Source example</a> · <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></p></div></details>
+  </footer>
+</body>
+</html>
